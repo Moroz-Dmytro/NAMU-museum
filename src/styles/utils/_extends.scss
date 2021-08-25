@@ -5,5 +5,16 @@
   background-position: center;
   background-size: cover;
 
-  transition: 0.3s;
+  transition: 0.5s;
+}
+
+%hover-effect-img {
+  transition: all 0.5s;
+
+  @include laptop {
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 10px 5px 5px #333;
+    }
+  }
 }

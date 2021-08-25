@@ -38,8 +38,6 @@
   }
 
   &__photo {
-    transition: 0.5s;
-
     max-height: calc(100vh - 100px);
 
     @include laptop {
@@ -54,12 +52,7 @@
       }
     }
 
-    @include laptop {
-      &:hover {
-        transform: scale(0.9);
-        box-shadow: 10px 5px 5px #333;
-      }
-    }
+    @extend %hover-effect-img;
   }
 
   &__img {
